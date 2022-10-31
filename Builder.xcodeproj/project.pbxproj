@@ -13,6 +13,11 @@
 		88F8BB94290FEF7700436CE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F8BB92290FEF7700436CE6 /* Main.storyboard */; };
 		88F8BB96290FEF7800436CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F8BB95290FEF7800436CE6 /* Assets.xcassets */; };
 		88F8BB99290FEF7800436CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F8BB97290FEF7800436CE6 /* LaunchScreen.storyboard */; };
+		88F8BBA2290FEFEC00436CE6 /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8BBA1290FEFEC00436CE6 /* CatalogPresenter.swift */; };
+		88F8BBA4290FF0EF00436CE6 /* CatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8BBA3290FF0EF00436CE6 /* CatalogInteractor.swift */; };
+		88F8BBA6290FF43600436CE6 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8BBA5290FF43600436CE6 /* CatalogViewController.swift */; };
+		88F8BBA8290FF6A200436CE6 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8BBA7290FF6A200436CE6 /* ModuleBuilder.swift */; };
+		88F8BBAA290FF6F600436CE6 /* CatalogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8BBA9290FF6F600436CE6 /* CatalogBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		88F8BB95290FEF7800436CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F8BB98290FEF7800436CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88F8BB9A290FEF7800436CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F8BBA1290FEFEC00436CE6 /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
+		88F8BBA3290FF0EF00436CE6 /* CatalogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInteractor.swift; sourceTree = "<group>"; };
+		88F8BBA5290FF43600436CE6 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		88F8BBA7290FF6A200436CE6 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		88F8BBA9290FF6F600436CE6 /* CatalogBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		88F8BB8B290FEF7700436CE6 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				88F8BB8C290FEF7700436CE6 /* AppDelegate.swift */,
-				88F8BB8E290FEF7700436CE6 /* SceneDelegate.swift */,
-				88F8BB90290FEF7700436CE6 /* ViewController.swift */,
+				88F8BBAB290FFA7600436CE6 /* Source */,
+				88F8BBA0290FEFA000436CE6 /* Catalog */,
 				88F8BB92290FEF7700436CE6 /* Main.storyboard */,
 				88F8BB95290FEF7800436CE6 /* Assets.xcassets */,
 				88F8BB97290FEF7800436CE6 /* LaunchScreen.storyboard */,
 				88F8BB9A290FEF7800436CE6 /* Info.plist */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		88F8BBA0290FEFA000436CE6 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				88F8BBA9290FF6F600436CE6 /* CatalogBuilder.swift */,
+				88F8BBA1290FEFEC00436CE6 /* CatalogPresenter.swift */,
+				88F8BBA3290FF0EF00436CE6 /* CatalogInteractor.swift */,
+				88F8BBA5290FF43600436CE6 /* CatalogViewController.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		88F8BBAB290FFA7600436CE6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				88F8BB8C290FEF7700436CE6 /* AppDelegate.swift */,
+				88F8BB8E290FEF7700436CE6 /* SceneDelegate.swift */,
+				88F8BBA7290FF6A200436CE6 /* ModuleBuilder.swift */,
+				88F8BB90290FEF7700436CE6 /* ViewController.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F8BBA6290FF43600436CE6 /* CatalogViewController.swift in Sources */,
+				88F8BBAA290FF6F600436CE6 /* CatalogBuilder.swift in Sources */,
 				88F8BB91290FEF7700436CE6 /* ViewController.swift in Sources */,
 				88F8BB8D290FEF7700436CE6 /* AppDelegate.swift in Sources */,
+				88F8BBA2290FEFEC00436CE6 /* CatalogPresenter.swift in Sources */,
+				88F8BBA8290FF6A200436CE6 /* ModuleBuilder.swift in Sources */,
 				88F8BB8F290FEF7700436CE6 /* SceneDelegate.swift in Sources */,
+				88F8BBA4290FF0EF00436CE6 /* CatalogInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

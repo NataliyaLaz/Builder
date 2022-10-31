@@ -15,5 +15,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func catalogButtonPressed(_ sender: UIButton) {
+        let controller = CatalogBuilder().setTitle(title: "Catalog").build()
+        self.present(controller, animated: true)
+    }
 }
 
